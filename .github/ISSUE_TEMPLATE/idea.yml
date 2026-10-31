@@ -1,0 +1,17 @@
+name: Idea
+description: Suggest something to build in a coming week
+title: "Idea: "
+labels: [idea]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options: [LastSearch, Debug Anything, Agent Theatre, Something new]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What should ship?
+      description: One paragraph. What would you do with it the day it lands?
+    validations: { required: true }
